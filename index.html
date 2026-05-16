@@ -40,11 +40,29 @@
         .heading-font { font-family: 'Orbitron', sans-serif; }
 
         .glass-card {
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background-color: rgba(15, 15, 15, 0.55);
+            background: rgba(15, 15, 15, 0.55);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
             transition: all 0.3s ease;
         }
+
+        #about {
+            background-image: url('images/photo-1724391114112-c83ad59f1d5f.webp');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            min-height: 80vh;
+        }
+
+        @media (max-width: 768px) {
+            #about {
+                background-attachment: scroll;
+            }
+        }
+
 .est {
     position: relative;
     top: 70px;
@@ -181,7 +199,7 @@
     </nav>
 
     <!-- Hero / About Section -->
-    <section id="about" class="pt-32 pb-20 px-6 text-center" style="background-image: url('images/photo-1724391114112-c83ad59f1d5f.webp'); background-size: cover; background-position: center; background-attachment: fixed; background-repeat: no-repeat;">
+    <section id="about" class="pt-32 pb-20 px-6 text-center">
         <div class="max-w-4xl mx-auto">
             <div class="est">
             <div class="inline-block px-4 py-1 border border-red-600 text-red-600 text-xs font-bold rounded-full mb-6">EST. 2026</div>
@@ -203,30 +221,32 @@
             <h2 class="heading-font text-3xl font-bold mb-12 text-center underline decoration-red-600 underline-offset-8">OUR CATEGORIES</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
                 <!-- Bodykits -->
-   <div class="category-card glass-card rounded-xl overflow-hidden text-center p-4">
+   <div class="category-card glass-card rounded-xl overflow-hidden text-center p-4 flex flex-col h-full">
                     <img src="bodykitfinal.jpg" alt="Matte black aerodynamic bodykit - front bumper and side panels" class="rounded-lg mb-4 opacity-80">
                     <h3 class="font-bold uppercase text-sm">Bodykits</h3>
                       <p class="text-xs text-gray-400 mb-4">A complete matte black aerodynamic kit featuring a new front bumper and side panels to give your car a bold, custom look.</p>
-                    <br>
-                    
+                    <a href="https://wa.me/+923297068230" target="_blank" class="block mt-auto text-center bg-red-600 py-2 rounded-lg text-xs font-bold btn-animate">ORDER NOW</a>
                 </div>
                 <!-- Spoilers -->
-                <div class="category-card glass-card rounded-xl overflow-hidden text-center p-4">
+                <div class="category-card glass-card rounded-xl overflow-hidden text-center p-4 flex flex-col h-full">
                     <img src="spoilerfinal.jpg" alt="Sleek racing rear wing spoiler for high-speed stability" class="rounded-lg mb-4 opacity-80">
                     <h3 class="font-bold uppercase text-sm">Spoilers</h3>
                     <p class="text-xs text-gray-400 mb-4">A sleek rear wing designed to improve high-speed stability and give the car a racing appearance.</p>
+                    <a href="https://wa.me/+923297068230" target="_blank" class="block mt-auto text-center bg-red-600 py-2 rounded-lg text-xs font-bold btn-animate">ORDER NOW</a>
                 </div>
                 <!-- Splitters -->
-                <div class="category-card glass-card rounded-xl overflow-hidden text-center p-4">
+                <div class="category-card glass-card rounded-xl overflow-hidden text-center p-4 flex flex-col h-full">
                     <img src="splitterfinal.jpg" alt="Front lip spoiler with enhanced downforce and aggressive stance" class="rounded-lg mb-4 opacity-80">
                     <h3 class="font-bold uppercase text-sm">Splitters</h3>
                     <p class="text-xs text-gray-400 mb-4">A front lip spoiler that enhances downforce and gives the car a more aggressive stance.</p>
+                    <a href="https://wa.me/+923297068230" target="_blank" class="block mt-auto text-center bg-red-600 py-2 rounded-lg text-xs font-bold btn-animate">ORDER NOW</a>
                 </div>
                 <!-- Coilovers -->
-                <div class="category-card glass-card rounded-xl overflow-hidden text-center p-4">
+                <div class="category-card glass-card rounded-xl overflow-hidden text-center p-4 flex flex-col h-full">
                     <img src="coiloverfinal.jpg" alt="Adjustable coilover suspension system for ride height and handling" class="rounded-lg mb-4 opacity-80">
                     <h3 class="font-bold uppercase text-sm">Coilovers & Springs</h3>
                     <p class="text-xs text-gray-400 mb-4">Adjustable suspension components that allow you to fine-tune your car's ride height and handling characteristics.</p>
+                    <a href="https://wa.me/+923297068230" target="_blank" class="block mt-auto text-center bg-red-600 py-2 rounded-lg text-xs font-bold btn-animate">ORDER NOW</a>
                 </div>
             </div>
         </div>
