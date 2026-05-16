@@ -52,19 +52,14 @@
             position: relative;
             min-height: 100vh;
             overflow: hidden;
-            background-color: #000;
+            background-image: url('images/photo-1724391114112-c83ad59f1d5f.webp');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
 
         #about::before {
-            content: '';
-            position: fixed;
-            inset: 0;
-            z-index: -2;
-            background: url('images/photo-1724391114112-c83ad59f1d5f.webp') center top / cover no-repeat;
-            transform: translateZ(0);
-        }
-
-        #about::after {
             content: '';
             position: absolute;
             inset: 0;
@@ -78,8 +73,9 @@
         }
 
         @media (max-width: 768px) {
-            #about::before {
-                background-position: top center;
+            #about {
+                background-attachment: scroll;
+                background-position: center center;
             }
         }
 
