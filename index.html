@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DM Motorsport | Premium Auto Styling</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;500;700&display=swap');
+        
+        :root {
+            --accent: #ef4444; /* Racing Red */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            scroll-behavior: smooth;
+        }
+
+        .heading-font { font-family: 'Orbitron', sans-serif; }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+.est {
+    position: relative;
+    top: 70px;
+}
+        .category-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-5px);
+        }
+
+        .btn-animate {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .btn-animate:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(239, 68, 68, 0.4);
+        }
+
+        .insta-btn:hover {
+            background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+        }
+
+        .tiktok-btn:hover {
+            background: linear-gradient(45deg, #000000 0%, #25f4ee 100%);
+        }
+
+        .email-btn:hover {
+            background: linear-gradient(45deg, #D14836 0%, #EA4335 100%);
+        }
+
+        .wa-btn:hover { background-color: #25D366; }
+
+        .form-input,
+        .form-textarea {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: #ffffff;
+            padding: 1rem 1.1rem;
+            border-radius: 1rem;
+            outline: none;
+            transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .form-input:focus,
+        .form-textarea:focus {
+            border-color: var(--accent);
+            transform: translateY(-1px);
+            box-shadow: 0 0 30px rgba(239, 68, 68, 0.14);
+        }
+
+        .form-textarea { min-height: 150px; resize: vertical; }
+
+        .contact-grid { gap: 2rem; }
+
+        @media (max-width: 768px) {
+            .contact-grid { gap: 1rem; }
+        }
+
+        .product-img { height: 200px; width: 100%; object-fit: cover; }
+    </style>
+</head>
+<body>
+
+    <!-- Header/Nav -->
+    <nav class="fixed w-full z-50 glass-card py-4 px-6 md:px-12 flex justify-between items-center">
+        <h1 class="heading-font text-2xl font-black italic tracking-tighter text-white">
+       <a href="#about"><img src="download.png" alt="" width="150px" height="150px"> 
+    </a>    
+    </h1>
+        <div class="hidden md:flex gap-8 text-xs font-bold uppercase tracking-widest">
+            <a href="#about" class="hover:text-red-500">About</a>
+            <a href="#categories" class="hover:text-red-500">Categories</a>
+            <a href="#products" class="hover:text-red-500">Featured</a>
+            <a href="#contact" class="hover:text-red-500">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero / About Section -->
+    <section id="about" class="pt-32 pb-20 px-6 text-center" style="background-image: url('images/photo-1724391114112-c83ad59f1d5f.webp'); background-size: cover; background-position: center; background-attachment: fixed; background-repeat: no-repeat;">
+        <div class="max-w-4xl mx-auto">
+            <div class="est">
+            <div class="inline-block px-4 py-1 border border-red-600 text-red-600 text-xs font-bold rounded-full mb-6">EST. 2026</div>
+            </div>
+            <br><br><br><br>
+            <h2 class="heading-font text-4xl md:text-6xl font-black mb-6 uppercase"><span style="color: red;">Upgrade</span> Your Ride With  Us</h2>
+            <p class="text-gray-400 text-lg leading-relaxed">
+               <span style="color: white;"> Welcome to </span><span class="text-white font-bold" style="color: red;">DM Motorsports</span>. 
+               <span style="color: white;">
+                We specialize in premium aesthetics and performance upgrades. Bodykits, Splitter, Spoiler, Foglights, LED lights, Headlights, Suspension, lowerings, and stock accessories available.
+            </span>
+            </p>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="py-20 bg-zinc-950 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="heading-font text-3xl font-bold mb-12 text-center underline decoration-red-600 underline-offset-8">OUR CATEGORIES</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+                <!-- Bodykits -->
+   <div class="category-card glass-card rounded-xl overflow-hidden text-center p-4">
+                    <img src="bodykitfinal.jpg" alt="Spoilers" class="rounded-lg mb-4 opacity-80">
+                    <h3 class="font-bold uppercase text-sm">Bodykits</h3>
+                      <p class="text-xs text-gray-400 mb-4">A complete matte black aerodynamic kit featuring a new front bumper and side panels to give your car a bold, custom look.</p>
+                    <br>
+                    
+                </div>
+                <!-- Spoilers -->
+                <div class="category-card glass-card rounded-xl overflow-hidden text-center p-4">
+                    <img src="spoilerfinal.jpg" alt="Spoilers" class="rounded-lg mb-4 opacity-80">
+                    <h3 class="font-bold uppercase text-sm">Spoilers</h3>
+                    <p class="text-xs text-gray-400 mb-4">A sleek rear wing designed to improve high-speed stability and give the car a racing appearance.</p>
+                </div>
+                <!-- Splitters -->
+                <div class="category-card glass-card rounded-xl overflow-hidden text-center p-4">
+                    <img src="splitterfinal.jpg" alt="Splitters" class="rounded-lg mb-4 opacity-80">
+                    <h3 class="font-bold uppercase text-sm">Splitters</h3>
+                    <p class="text-xs text-gray-400 mb-4">A front lip spoiler that enhances downforce and gives the car a more aggressive stance.</p>
+                </div>
+                <!-- Coilovers -->
+                <div class="category-card glass-card rounded-xl overflow-hidden text-center p-4">
+                    <img src="coiloverfinal.jpg" alt="Coilovers" class="rounded-lg mb-4 opacity-80">
+                    <h3 class="font-bold uppercase text-sm">Coilovers & Springs</h3>
+                    <p class="text-xs text-gray-400 mb-4">Adjustable suspension components that allow you to fine-tune your car's ride height and handling characteristics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="products" class="py-20 px-6 max-w-7xl mx-auto">
+         <h2 class="heading-font text-3xl font-bold mb-12 text-center underline decoration-red-600 underline-offset-8">FEATURED PRODUCTS</h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <!-- Product 1 -->
+            <div class="glass-card rounded-2xl overflow-hidden group">
+                <div class="overflow-hidden"><img src="Screenshot 2026-05-14 205755.png" class="product-img group-hover:scale-110 transition duration-500"></div>
+                <div class="p-6">
+                    <h4 class="font-bold mb-2">Civic X RS Bodykit</h4>
+                    <p class="text-xs text-gray-400 mb-4">Fiberglass & plastic high-finish bodykit with perfect fitment.</p>
+                    <a href="https://wa.me/+923297068230" target="_blank" class="block text-center bg-red-600 py-2 rounded-lg text-xs font-bold btn-animate">ORDER NOW</a>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="glass-card rounded-2xl overflow-hidden group">
+                <div class="overflow-hidden"><img src="splitter.jpg" class="product-img group-hover:scale-110 transition duration-500"></div>
+                <div class="p-6">
+                    <h4 class="font-bold mb-2">Universal Splitter</h4>
+                    <p class="text-xs text-gray-400 mb-4">3-piece adjustable front lip for all car models.</p>
+                    <a href="https://wa.me/+923297068230" target="_blank" class="block text-center bg-red-600 py-2 rounded-lg text-xs font-bold btn-animate">ORDER NOW</a>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="glass-card rounded-2xl overflow-hidden group">
+                <div class="overflow-hidden"><img src="cultus1.jpg" class="product-img group-hover:scale-110 transition duration-500"></div>
+                <div class="p-6">
+                    <h4 class="font-bold mb-2">Suzuki Cultus Bodykit</h4>
+                    <p class="text-xs text-gray-400 mb-4">Full kit including front, back bumpers and skirts.</p>
+                    <a href="https://wa.me/+923297068230" target="_blank" class="block text-center bg-red-600 py-2 rounded-lg text-xs font-bold btn-animate">ORDER NOW</a>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="glass-card rounded-2xl overflow-hidden group">
+                <div class="overflow-hidden"><img src="springs2.png" class="product-img group-hover:scale-110 transition duration-500"></div>
+                <div class="p-6">
+                    <h4 class="font-bold mb-2">Lowering Springs</h4>
+                    <p class="text-xs text-gray-400 mb-4">High-tensile springs for better stance and grip.</p>
+                    <a href="https://wa.me/+923297068230" target="_blank" class="block text-center bg-red-600 py-2 rounded-lg text-xs font-bold btn-animate">ORDER NOW</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-20 bg-zinc-950 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+                  <h2 class="heading-font text-3xl font-bold mb-12 text-center underline decoration-red-600 underline-offset-8">WHY CHOOSE US?</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div><i class="fas fa-tag text-red-600 text-3xl mb-4"></i><p class="font-bold">Affordable Prices</p></div>
+                <div><i class="fas fa-bolt text-red-600 text-3xl mb-4"></i><p class="font-bold">2–3 Days Delivery</p></div>
+                <div><i class="fas fa-truck-fast text-red-600 text-3xl mb-4"></i><p class="font-bold">All Pakistan Shipping</p></div>
+                <div><i class="fas fa-headset text-red-600 text-3xl mb-4"></i><p class="font-bold">Customer Support</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delivery Section -->
+    <section class="py-20 px-6 text-center glass-card mx-6 my-10 rounded-3xl max-w-4xl lg:mx-auto">
+        <h2 class="heading-font text-2xl font-bold mb-4"> NATIONWIDE DELIVERY 🚚</h2>
+        <div class="space-y-2 text-gray-300">
+            <p>Delivery Time: <span class="text-white font-bold">2–3 Working Days</span></p>
+            <p class="text-sm opacity-70">Note: Delivery Charges Separate based on city and package weight.</p>
+        </div>
+    </section>
+
+    <!-- Contact / Social Footer -->
+    <footer id="contact" class="py-20 px-6 text-center border-t border-white/5">
+                 <h2 class="heading-font text-3xl font-bold mb-12 text-center underline decoration-red-600 underline-offset-8">GET IN TOUCH </h2>
+        <div class="max-w-4xl mx-auto space-y-10">
+            <form action="https://formspree.io/f/mojroerj" method="POST" class="glass-card p-8 rounded-3xl border border-white/10 text-left">
+                <div class="mb-6">
+                    <label for="name" class="block text-xs uppercase tracking-widest text-gray-400 mb-2">Your Name</label>
+                    <input id="name" name="name" type="text" required class="form-input" placeholder="Enter your name">
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block text-xs uppercase tracking-widest text-gray-400 mb-2">Your Email</label>
+                    <input id="email" name="email" type="email" required class="form-input" placeholder="you@example.com">
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-xs uppercase tracking-widest text-gray-400 mb-2">Questions / Queries</label>
+                    <textarea id="message" name="message" required class="form-textarea" placeholder="Tell us how we can help..."></textarea>
+                </div>
+                <button type="submit" class="w-full bg-red-600 hover:bg-red-500 transition rounded-full py-4 text-sm font-bold uppercase tracking-wide">Send Message</button>
+            </form>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="https://www.tiktok.com/@dmmotorsport.pk?_r=1&_t=ZS-96MP4LbcLNk" target="_blank" 
+                   class="btn-animate tiktok-btn flex items-center justify-center gap-3 px-10 py-4 rounded-xl glass-card">
+                    <i class="fab fa-tiktok text-2xl"></i>
+                    <span class="font-bold">@dmmotorsport</span>
+                </a>
+                <a href="https://www.instagram.com/dmmotorsport.pk/" target="_blank" 
+                   class="btn-animate insta-btn flex items-center justify-center gap-3 px-10 py-4 rounded-xl glass-card">
+                    <i class="fab fa-instagram text-2xl"></i>
+                    <span class="font-bold">@dmmotorsport</span>
+                </a>
+                <a href="mailto:dmmotorsport12@gmail.com" target="_blank" 
+                   class="btn-animate email-btn flex items-center justify-center gap-3 px-10 py-4 rounded-xl glass-card">
+                    <i class="fas fa-envelope text-2xl"></i>
+                    <span class="font-bold">dmmotorsport12@gmail.com</span>
+                </a>
+                <a href="https://wa.me/+923297068230" target="_blank" 
+                   class="btn-animate wa-btn flex items-center justify-center gap-3 px-10 py-4 rounded-xl glass-card">
+                    <i class="fab fa-whatsapp text-2xl text-[#25D366]"></i>
+                    <span class="font-bold">WhatsApp Us</span>
+                </a>
+            </div>
+            <p class="text-xs text-gray-600 tracking-widest uppercase">&copy; 2026 DM MOTORSPORTS | ALL RIGHTS RESERVED</p>
+        </div>
+    </footer>
+
+</body>
+</html>
