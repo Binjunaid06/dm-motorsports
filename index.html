@@ -49,17 +49,34 @@
         }
 
         #about {
+            position: relative;
             background-image: url('images/photo-1724391114112-c83ad59f1d5f.webp');
             background-size: cover;
-            background-position: center center;
+            background-position: center top;
             background-repeat: no-repeat;
             background-attachment: scroll;
-            min-height: 80vh;
+            min-height: 90vh;
+            overflow: hidden;
+        }
+
+        #about::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.55);
+            z-index: 1;
+        }
+
+        #about .max-w-4xl {
+            position: relative;
+            z-index: 2;
         }
 
         @media (max-width: 768px) {
             #about {
-                background-attachment: scroll;
+                background-size: contain;
+                background-position: top center;
+                min-height: 100vh;
             }
         }
 
